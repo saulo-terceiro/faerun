@@ -7,5 +7,5 @@ services:
     volumes:
       - ./banco:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD: root
-      - MYSQL_DATABASE: demoapidb
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: demoapidb

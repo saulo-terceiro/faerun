@@ -296,6 +296,7 @@ public class ControllerTest {
         assertTrue(debtsDtoResponse.getDebits().get(0).getId()==bolsao2.getIdBolsao());
     }
 
+    /*
     @SneakyThrows
     @Test
     public void testSettleAllValido(){
@@ -312,7 +313,7 @@ public class ControllerTest {
         assertTrue(bolsaoDtoResponse4.equals(bolsao.getBolsaoDtoResponse()));
         BolsaoDtoResponse bolsaoDtoResponse3 = (BolsaoDtoResponse)bolsaoController.getById(bolsao2.getIdBolsao()).getBody();
         assertTrue(bolsaoDtoResponse3.equals(bolsao2.getBolsaoDtoResponse()));
-
     }
+    */
 
 }
