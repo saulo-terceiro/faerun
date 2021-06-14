@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "07860e8b-ee96-4b5a-ae5f-3e4adaac4805",
+		"name": "DEMO API COLLECTION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/water-pockets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/water-pockets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"water-pockets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/water-pockets/balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/water-pockets/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"water-pockets",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/water-pockets/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "/water-pockets/{id}/debt",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/water-pockets/debt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"water-pockets",
+						"debt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/water-pockets/{id}/settle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":3,\r\n    \"quantity\":400\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/water-pockets/1/settle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"water-pockets",
+						"1",
+						"settle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/water-pockets/settle-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":3,\r\n    \"quantity\":400\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/water-pockets/settle-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"water-pockets",
+						"settle-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/water-pockets/{id}/borrow",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"from\": 2,\r\n\"quantity\": 23.4\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/water-pockets/3/borrow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"water-pockets",
+						"3",
+						"borrow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/water-pockets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"D\",\r\n        \"storage\": -200\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/water-pockets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"water-pockets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
