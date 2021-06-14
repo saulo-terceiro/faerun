@@ -1,0 +1,11 @@
+version: '3'
+services:
+  banco:
+    image: mysql:5.7
+    ports:
+      - 3307:3306
+    volumes:
+      - ./banco:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD: root
+      - MYSQL_DATABASE: demoapidb
